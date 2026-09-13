@@ -1,10 +1,25 @@
 # BEP Yerel Web Uygulaması
 
+## v26 yenilikleri
+
+- Bireysel izleme çizelgesindeki aylık değerlendirme başlıkları Excel'deki “Metni Yukarı Döndür” görünümüne dönüştürüldü.
+- Toplantı Ajandasına `0000` şifreli “Tüm toplantı randevu tarihlerini sil” işlemi eklendi; tarih ve saatler temizlendikten sonra yeniden planlama bildirimi gösterilir.
+- Uygulama açılırken bugüne ait toplantılar varsa öğrenci, sınıf, saat ve yer bilgileriyle hatırlatma gösterilir.
+- Sınıf, engel türü, grup, destek eğitim, toplantı ve RAM kademe uyarısı dağılımlarını gösteren İstatistikler sayfası eklendi.
+- E-Okuldan indirilen `IOG02009_99.XLS` biçimi desteklenir. Aynı okul numarasının tekrar eden satırları tek öğrenciye dönüştürülür ve engel türleri birleştirilir; dosyanın sonundaki indirme tarih/saat satırı yok sayılır.
+- Tüm ekranların altında geliştirici adı ve iletişim adresi gösterilir.
+
+## v25 yenilikleri
+
+- Sınıf veya tüm öğrenciler için toplu PDF kaydında RAM/E-Okul sınıf kademesi uyumsuzluğu bulunan öğrenciler otomatik olarak dışarıda bırakılır; bu kayıtlar açık öğrenci üzerinden bireysel indirilebilir.
+- Öğrenci veritabanına sınıf öğretmeni ve engel türü sütunları ile engel türü filtresi eklendi. Eğitim yılı listede yalnızca yıl aralığı olarak gösterilir.
+- “Yıllık BEP verilerini temizle” düğmesi, `0000` şifresi ve ikinci onay sonrasında yıllık plan/toplantı/karar verilerini temizler; kimlik, aile özlük bilgileri, sağlık/geçmiş/düzenlemeler ve eğitsel performansı korur.
+
 Sol menüdeki BEP iş akışı sayfalarının tamamı doğrudan bağlantıdır. Kullanıcı **Önceki** ve **Devam** düğmelerini kullanmak zorunda değildir. Ayrı PDF sayfaları, sol menüyü kalabalıklaştırmadan **Çıktılar** ekranından açılır.
 
 ## Excel'den toplu öğrenci aktarımı
 
-Öğrenci Veritabanı sayfasındaki **Excel dosyası seç** düğmesi, `Sadeleştirilmiş Liste` adlı çalışma sayfasını okur. Öğrenci numarası, sınıf/şube, ad-soyad, cinsiyet, engel durumu ve önerilen hizmet bilgileri aktarılır. Birden fazla engel durumu ayrı değerlere dönüştürülür. Okul bilgilerinde bulunmayan sınıflar öğrenci kayıtlarından önce otomatik oluşturulur. Aynı eğitim yılında aynı öğrenci numarasına sahip tekrar satırlar yeniden eklenmez.
+Öğrenci Veritabanı sayfasındaki **E-Okul’dan öğrenci yükle** bölümü, E-Okuldan alınan listeyi doğrudan okur. Bölümde “E-Okuldan indirilen özel eğitim gereksinimli öğrenci listesini Excel verisi olarak buraya yükleyiniz.” açıklaması gösterilir. Okul No, sınıf/şube, ad-soyad, cinsiyet, engel durumu ve önerilen hizmet bilgileri aktarılır. Aynı okul numarasına ait tekrar satırlar tek öğrenciye dönüştürülür ve bütün engel durumları birleştirilir. Okul bilgilerinde bulunmayan sınıflar otomatik oluşturulur. Sadeleştirilmiş öğrenci listesine ihtiyaç yoktur.
 
 ## Toplantı katılımı ve imzalar
 
@@ -109,9 +124,39 @@ JSON yedekle bütün veritabanını indirir; JSON geri yükle daha önce indiril
 - Aynı uzun dönemli amaca bağlı kısa dönemli amaçlar tek hücre içinde tutulur; her kısa dönemli amaç ayrı bir alt satırda gösterilir. Ölçüt, yöntem, materyal, tarih ve değerlendirme bilgileri de ilgili kısa amaçla aynı satır düzenini korur.
 - İzleme çizelgesi 11 puntoyla tek A4 yatay sayfaya sığacak şekilde sekiz amaç satırıyla hazırlanır; daha fazla gerçek amaç varsa ek satırlar korunur.
 
+## PDF dosyalarını doğrudan kaydetme ve toplantı katılımı
+
+- Çıktılar sayfasındaki “PDF dosyalarını bilgisayara kaydet” bölümünde varsayılan kapsam açık öğrencidir. İstenirse bir sınıftaki bütün BEP kayıtları veya veritabanındaki tüm öğrenci/BEP kayıtları tek PDF dosyasına kaydedilebilir.
+- PDF'e yalnız Çıktılar bölümünde işaretli sayfalar eklenir. Kapak ve 1. sayfa dikey, diğer sayfalar yatay kalır. PDF oluşturma bileşenleri uygulama klasöründedir; internet bağlantısı gerekmez.
+- Veli katılım durumu, aile bilgilerindeki üç toplantı işaretine göre “1. Toplantıya Katıldı”, “1. ve 2. Toplantılara Katıldı”, “1. ve 3. Toplantılara Katıldı”, “2. ve 3. Toplantılara Katıldı” veya “Tümüne Katıldı” biçiminde otomatik yazılır.
+- Her dersin Sorumlu kişi(ler) alanı toplantıya katılımı işaretlenen anne/baba/vasi adı, sınıf öğretmeni ve ilgili dersin öğretmeninden otomatik oluşturulur. Bulunmayan isimler eklenmez.
+- Hizmet türlerine Sağlık Kuruluşuna Yönlendirme, Veli Eğitimi ve Yeniden RAM İncelemesi seçenekleri eklenmiştir.
+
 ## Önemli notlar
 
 - BEP_VeriGir bir veri giriş ekranıdır ve PDF çıktısı yoktur.
 - PDF düğmesi tarayıcının yerleşik yazdırma/PDF özelliğini kullanır. Yazdırma penceresinde yön “Yatay”, kenar boşluğu “Dar” ve ölçek “Sayfaya sığdır” olarak görünmüyorsa bunları seçin.
 - 6. sayfa, Excel örneğindeki “Yıl sonunda değerlendirme yapılacak.” metnini korur.
 - Alanların Excel kaynağı ve bağımlılıkları EXCEL-ALAN-ESLEME-RAPORU.md dosyasında belgelenmiştir.
+
+## E-Okul liste karşılaştırması ve BEP planı seçimleri
+
+- E-Okuldan alınan `IOG02009_99.XLS` biçimindeki yeni öğrenci listesi doğrudan içe aktarılmadan önce mevcut eğitim yılıyla karşılaştırılır. Yeni öğrenciler, yeni dosyada bulunmayan eski öğrenciler ve engel türü değişen öğrenciler ayrı listelerde gösterilir.
+- Kullanıcı onay verene kadar öğrenci veritabanı değiştirilmez. Güncelleme uygulandığında yeni öğrenciler eklenir ve değişen engel türleri güncellenir; yeni listede bulunmayan eski kayıtlar güvenlik amacıyla otomatik silinmez.
+- Her karşılaştırma tarih, dosya adı ve fark ayrıntılarıyla yerel arşive kaydedilir; arşiv kayıtları ayrıca JSON olarak indirilebilir.
+- BEP Planında yeni amaçların varsayılan ölçütü `%50 Bağımsız Yapar`dır ve istenirse değiştirilebilir.
+- Materyaller ile değerlendirme yöntemleri görünür onay kutularından birden fazla seçilebilir. Yeni plan satırlarında Doğrudan gözlem, Kontrol listesi, Uygulamalı değerlendirme ve Yazılı değerlendirme varsayılan seçilidir.
+- Performans her kısa dönemli amaç için `1/1` ile `1/5` arasında renk kodlu seçeneklerle girilir.
+
+## Materyal, değerlendirme ve performans alanlarının ergonomisi
+
+- Materyal ve değerlendirme seçeneklerindeki onay kutuları sabit 16×16 piksel boyutuna küçültülmüştür.
+- Seçenek metinleri kutunun yanında, 13 piksel kalın yazıyla ve gerektiğinde alt satıra geçerek eksiksiz gösterilir.
+- Yatay taşma kaldırılmış, seçenekler masaüstünde iki sütunlu ve dar ekranlarda tek sütunlu hale getirilmiştir.
+- Performans seçeneklerinde radyo düğmeleri 14×14 piksel boyutundadır; `1/1`–`1/5` değerleri renkli alanların ortasında okunaklı biçimde gösterilir.
+
+## Windows kurulum sürümü
+
+- `BEP-Yerel-Kurulum-28.0.0.exe` Windows 64 bit bilgisayarlara kurulum yapar ve masaüstü ile Başlat menüsü kısayolları oluşturur.
+- Öğrenci, okul, BEP ve karşılaştırma arşivi verileri her Windows kullanıcısının uygulamaya özel yerel veri klasöründe IndexedDB veritabanında kalıcı olarak saklanır.
+- Uygulama çevrimdışı çalışır. Başka bilgisayara veri taşımak veya ek yedek almak için uygulamadaki JSON yedekleme ve geri yükleme düğmeleri kullanılabilir.

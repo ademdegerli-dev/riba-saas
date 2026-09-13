@@ -1,0 +1,14 @@
+/* v24: doğrudan PDF kaydetme ve toplu kapsam seçimi */
+.pdf-save-card{border:2px solid #8bbcae}
+.pdf-save-grid{display:grid;grid-template-columns:minmax(250px,1.4fr) minmax(220px,1fr) minmax(260px,1.3fr) auto;gap:14px;align-items:end}
+.pdf-save-grid>label{display:grid;gap:7px}.pdf-save-grid>label>span{font-size:12px;font-weight:800;color:#42525a}
+.pdf-save-summary{min-height:42px;display:grid;align-content:center;padding:8px 12px;border:1px solid #d4dfdc;border-radius:9px;background:#f2f7f5}.pdf-save-summary strong,.pdf-save-summary small{display:block}.pdf-save-summary small{color:#61706b;margin-top:3px}
+.pdf-save-grid>.primary{min-height:42px}.pdf-save-progress{grid-column:1/-1;min-height:18px;color:#176b57;font-size:12px;font-weight:750}
+.service-entry .service-course{grid-column:span 3}.service-entry .service-types{grid-column:span 4}.service-entry .service-short{grid-column:span 2}.service-entry .service-responsible{grid-column:span 3}.service-entry .service-responsible input[readonly]{background:#edf5f2;color:#174f44;font-weight:700}
+#pdfRenderHost{position:absolute;left:-20000px;top:0;z-index:-1000;background:#fff;pointer-events:none}
+#pdfRenderHost .batch-page{margin:0!important;box-shadow:none!important;overflow:visible!important}
+#pdfRenderHost .batch-page.portrait-page{width:210mm!important;min-height:297mm!important}
+#pdfRenderHost .batch-page.landscape-page{width:297mm!important;min-height:210mm!important}
+#pdfRenderHost .plan-course-paper{padding-top:8mm!important}
+@media(max-width:1050px){.pdf-save-grid{grid-template-columns:1fr 1fr}.pdf-save-summary{grid-column:1/-1}}
+@media(max-width:680px){.pdf-save-grid{grid-template-columns:1fr}}

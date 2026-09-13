@@ -1,0 +1,47 @@
+{
+  "name": "bep-yerel-uygulamasi",
+  "version": "30.0.0",
+  "description": "Bireyselleştirilmiş Eğitim Programı yönetimi ve PDF çıktıları",
+  "main": "main.js",
+  "author": "Adem DEĞERLİ <ademdegerli@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "39.2.7",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "tr.edu.bep.yerel",
+    "productName": "BEP Yerel Uygulaması",
+    "artifactName": "BEP-Yerel-Kurulum-${version}.${ext}",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/**",
+      "!node_modules/.cache/**"
+    ],
+    "asar": true,
+    "win": {
+      "signAndEditExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "BEP Yerel Uygulaması"
+    }
+  }
+}

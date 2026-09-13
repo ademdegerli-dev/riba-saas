@@ -1,0 +1,71 @@
+/* BEP Planı: küçük seçim düğmeleri ve her zaman okunabilir seçenek metinleri */
+.plan-check-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+  max-height:320px;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+.plan-check-grid label{
+  display:grid;
+  grid-template-columns:18px minmax(0,1fr);
+  align-items:start;
+  gap:9px;
+  min-width:0;
+  min-height:44px;
+  padding:10px 11px;
+}
+.plan-check-grid label input[type="checkbox"]{
+  appearance:auto;
+  -webkit-appearance:checkbox;
+  width:16px!important;
+  min-width:16px!important;
+  max-width:16px!important;
+  height:16px!important;
+  min-height:16px!important;
+  padding:0!important;
+  margin:1px 0 0!important;
+  box-shadow:none!important;
+  accent-color:var(--green);
+}
+.plan-check-grid label span{
+  display:block;
+  min-width:0;
+  color:var(--ink);
+  font-size:13px;
+  font-weight:600;
+  line-height:1.35;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+.performance-score-options label{
+  display:grid;
+  grid-template-columns:16px auto;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  min-width:0;
+  padding:9px 10px;
+}
+.performance-score-options input[type="radio"]{
+  appearance:auto;
+  -webkit-appearance:radio;
+  width:14px!important;
+  min-width:14px!important;
+  max-width:14px!important;
+  height:14px!important;
+  min-height:14px!important;
+  padding:0!important;
+  margin:0!important;
+  box-shadow:none!important;
+  accent-color:#173f35;
+}
+.performance-score-options span{
+  display:block;
+  color:#15251f;
+  font-size:14px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+}
+@media(max-width:850px){.plan-check-grid{grid-template-columns:1fr}}
