@@ -1,0 +1,82 @@
+/* v23: PDF tablo yazıları, amaç satırları ve BEP planı imzaları */
+.performance-output-table,
+.plan-table,
+.evaluation-table{
+  font-size:11pt!important;
+}
+
+.performance-output-table th,
+.performance-output-table td,
+.plan-table th,
+.plan-table td,
+.evaluation-table th,
+.evaluation-table td{
+  font-size:11pt!important;
+  line-height:1.18;
+}
+
+.plan-table th,
+.plan-table td{
+  padding:1.2mm!important;
+}
+
+.goal-stack-line{
+  display:block;
+  min-height:1.35em;
+  white-space:pre-wrap;
+}
+
+.goal-stack-line + .goal-stack-line{
+  margin-top:1.2mm;
+  padding-top:1.2mm;
+}
+
+.evaluation-goal-cell>strong{
+  display:block;
+}
+
+.short-goal-line{
+  display:block;
+  margin-top:1.2mm;
+  padding-top:1.2mm;
+  white-space:pre-wrap;
+}
+
+.evaluation-table .student-box,
+.evaluation-table .year-head,
+.evaluation-table .row-year,
+.evaluation-table .month-head{
+  font-size:11pt!important;
+}
+
+.evaluation-table .year-head,
+.evaluation-table .row-year{
+  white-space:normal!important;
+  line-height:1.05;
+  overflow-wrap:normal;
+}
+
+.evaluation-table .month-head{
+  height:24mm;
+  line-height:1;
+}
+
+@media print{
+  #toast{
+    display:none!important;
+  }
+  .plan-course-paper{
+    padding-top:2mm!important;
+  }
+  .performance-output-table,
+  .plan-table,
+  .evaluation-table,
+  .performance-output-table th,
+  .performance-output-table td,
+  .plan-table th,
+  .plan-table td,
+  .evaluation-table th,
+  .evaluation-table td{
+    font-size:11pt!important;
+  }
+}

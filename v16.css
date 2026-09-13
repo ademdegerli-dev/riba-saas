@@ -1,0 +1,23 @@
+/* v16: T.C. kimlik doğrulaması ve geniş aile bilgi kartları */
+.field input.invalid-input{border-color:#c62828;background:#fff0f0;box-shadow:0 0 0 3px rgba(198,40,40,.13)}
+.field input:valid[data-tc-input]{border-color:#2f7d65}
+
+.family-card .card-body{padding:20px;background:#eef3f1}
+.family-card .grid{gap:18px}
+.family-card .family-parent,.family-card .family-guardian{grid-column:span 6;min-width:0}
+.family-card .family-person-head{padding:12px 16px}
+.family-card .family-person-head h3{font-size:15px}
+.family-card .family-person-grid{gap:14px;padding:16px}
+.family-card .family-person-grid .field{grid-column:auto}
+.family-card .family-person-grid .family-half{grid-column:span 6}
+.family-card .family-person-grid .family-full{grid-column:1/-1}
+.family-card .family-person-grid textarea{height:74px;min-height:74px;resize:vertical}
+.family-card .guardian-toggle{margin-top:2px;padding:2px 0}
+.family-card .family-attendance{margin-top:2px}
+
+@media(max-width:1050px){
+  .family-card .family-parent,.family-card .family-guardian{grid-column:1/-1}
+}
+@media(max-width:620px){
+  .family-card .family-person-grid .family-half{grid-column:1/-1}
+}

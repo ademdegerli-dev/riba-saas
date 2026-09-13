@@ -1,0 +1,46 @@
+/* v20: kimlik oranları, ders akışı ve çıktı imzaları */
+.identity-card .grid{grid-template-columns:repeat(40,minmax(0,1fr));gap:10px}
+.identity-card .field.id-sequence{grid-column:span 3}
+.identity-card .field.id-school-no{grid-column:span 3}
+.identity-card .field.id-tc{grid-column:span 8}
+.identity-card .field.id-class{grid-column:span 8}
+.identity-card .field.id-name{grid-column:span 10}
+.identity-card .field.id-teacher{grid-column:span 8}
+.identity-card .field.id-gender{grid-column:span 5}
+.identity-card .field.id-birth{grid-column:span 7}
+.identity-card .field.id-group{grid-column:span 28}
+.identity-card .field.id-date{grid-column:span 10}
+.identity-card .field.id-year{grid-column:span 20}
+.identity-card .field.full{grid-column:1/-1}
+
+.performance-add{text-align:left;padding:4px 0 8px}
+.performance-add button{min-width:360px;padding:14px 22px;font-size:16px;font-weight:800;background:#176b57;border-color:#176b57;color:#fff;box-shadow:0 5px 14px rgba(23,107,87,.2)}
+.plan-wizard .step-count{font-size:13px;color:#31564d}
+
+.performance-footnote{margin-top:8mm;padding-top:4mm;border-top:1px solid #777;font-size:9px;line-height:1.45;text-align:justify}
+.principal-signature{width:58mm;min-height:24mm;margin:6mm 0 0 auto;display:grid;justify-items:center;align-content:start;text-align:center;font-size:10px}
+.principal-signature strong,.principal-signature span,.principal-signature i{display:block}
+.principal-signature span{margin-top:2mm}
+.principal-signature i{margin-top:7mm;font-style:normal}
+
+@media(max-width:1180px){
+  .identity-card .grid{grid-template-columns:repeat(20,minmax(0,1fr))}
+  .identity-card .field.id-sequence,.identity-card .field.id-school-no{grid-column:span 3}
+  .identity-card .field.id-tc,.identity-card .field.id-class,.identity-card .field.id-name,.identity-card .field.id-teacher{grid-column:span 7}
+  .identity-card .field.id-gender{grid-column:span 4}
+  .identity-card .field.id-birth{grid-column:span 6}
+  .identity-card .field.id-group{grid-column:span 10}
+  .identity-card .field.id-date{grid-column:span 6}
+  .identity-card .field.id-year{grid-column:span 8}
+}
+@media(max-width:760px){
+  .identity-card .grid{grid-template-columns:1fr}
+  .identity-card .field.id-sequence,.identity-card .field.id-school-no,.identity-card .field.id-tc,.identity-card .field.id-birth,.identity-card .field.id-year,.identity-card .field.id-group,.identity-card .field.id-class,.identity-card .field.id-name,.identity-card .field.id-teacher,.identity-card .field.id-gender,.identity-card .field.id-date{grid-column:1}
+  .performance-add button{width:100%;min-width:0}
+}
+@media print{
+  body.support-print .support-table th:last-child,body.support-print .support-table td:last-child{display:none!important}
+  body.support-print .support-table{min-width:0;width:100%}
+  .performance-footnote{break-inside:avoid}
+  .principal-signature{break-inside:avoid}
+}

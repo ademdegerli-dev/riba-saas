@@ -1,0 +1,10 @@
+.option-editor{grid-column:1/-1!important;width:100%;min-width:0;min-height:50vh;padding:0!important;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:12px}
+.option-editor summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 18px;background:#e8f1ee;border-bottom:1px solid var(--line);font-size:16px;list-style-position:inside}
+.option-editor summary small{margin-left:auto;padding:5px 9px;border-radius:999px;background:#fff;color:var(--muted);font-size:11px;white-space:nowrap}
+.option-help{padding:11px 18px;background:#f7faf9;border-bottom:1px solid #e4eae8;color:var(--muted);font-size:12px}
+.option-list{display:grid!important;grid-template-columns:1fr!important;gap:0!important;min-height:calc(50vh - 155px);max-height:560px!important;margin:0!important;overflow:auto;background:#fff}
+.option-row{display:grid!important;grid-template-columns:42px minmax(300px,1fr) 105px 64px!important;gap:10px!important;align-items:center;padding:9px 14px;border-bottom:1px solid #e5ebe9}
+.option-row:hover{background:#f4f8f6}.option-number{display:grid;place-items:center;width:28px;height:28px;border-radius:7px;background:#e8f1ee;color:var(--green);font-size:12px;font-weight:800}
+.option-row input{min-width:0!important;width:100%!important;background:#fff;border-color:#bfcac7}.option-row input:focus{background:#fffde9}.option-edit-note{font-size:11px;color:#6c7d76;text-align:center}.option-row button{width:64px;padding:9px 8px!important}
+.option-add{display:grid;grid-template-columns:minmax(300px,1fr) auto;gap:10px;padding:15px 18px;background:#edf5f2;border-top:1px solid var(--line)}.option-add input{background:#fff}.option-add button{min-width:150px;background:var(--green);border-color:var(--green);color:#fff}
+@media(max-width:720px){.option-editor{min-height:60vh}.option-list{min-height:calc(60vh - 170px)}.option-row{grid-template-columns:34px minmax(0,1fr) 55px!important;padding:8px}.option-edit-note{display:none}.option-row button{width:55px}.option-add{grid-template-columns:1fr}.option-add button{width:100%}}

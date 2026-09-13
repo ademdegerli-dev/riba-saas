@@ -1,0 +1,17 @@
+/* v17: dinamik performans, hizmet ve karar satırları */
+.dynamic-row,.service-entry{border:1px solid #cbdad5;border-radius:12px;background:#f7faf9;overflow:hidden}
+.dynamic-row-head,.service-entry-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;background:#dfece8;color:#174f44}
+.dynamic-row>.grid,.service-entry>.grid{padding:14px;gap:14px}
+.dynamic-row .half{grid-column:span 6}
+.service-entry .service-course{grid-column:span 3}
+.service-entry .service-types{grid-column:span 4}
+.service-entry .service-short{grid-column:span 2}
+.service-entry .service-responsible{grid-column:span 3}
+.dynamic-decision{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:end}
+.dynamic-decision .field{grid-column:1}
+.dynamic-decision>button{grid-column:2;margin-bottom:1px}
+.readonly-value{min-height:42px;display:flex;align-items:center;padding:10px 12px;border:1px solid #afc5be;border-radius:8px;background:#e9f0ee;color:#174f44;font-weight:700}
+.plan-course-paper{margin-bottom:24px}
+@media(max-width:1050px){.service-entry .service-course,.service-entry .service-types,.service-entry .service-short,.service-entry .service-responsible{grid-column:span 6}}
+@media(max-width:650px){.dynamic-row .half,.service-entry .service-course,.service-entry .service-types,.service-entry .service-short,.service-entry .service-responsible{grid-column:1/-1}.dynamic-decision{grid-template-columns:1fr}.dynamic-decision>button{grid-column:1}}
+@media print{.plan-course-paper{break-after:page;margin:0}.plan-course-paper:last-child{break-after:auto}}

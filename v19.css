@@ -1,0 +1,25 @@
+/* v19: öğrenci bilgilerini referans görseldeki satır sırasına yerleştirir */
+.wizard-footer{position:static;bottom:auto}
+.identity-card .grid{grid-template-columns:repeat(16,minmax(0,1fr));gap:10px}
+.identity-card .field.id-sequence{grid-column:span 2}
+.identity-card .field.id-school-no{grid-column:span 2}
+.identity-card .field.id-tc{grid-column:span 3}
+.identity-card .field.id-class{grid-column:span 3}
+.identity-card .field.id-name{grid-column:span 4}
+.identity-card .field.id-teacher{grid-column:span 2}
+.identity-card .field.id-gender{grid-column:span 2}
+.identity-card .field.id-birth{grid-column:span 3}
+.identity-card .field.id-group{grid-column:span 5}
+.identity-card .field.id-year{grid-column:span 6}
+.identity-card .field.id-date{grid-column:span 4}
+.identity-card .field.full{grid-column:1/-1}
+@media(max-width:1180px){
+  .identity-card .grid{grid-template-columns:repeat(8,minmax(0,1fr))}
+  .identity-card .field.id-sequence,.identity-card .field.id-school-no,.identity-card .field.id-gender{grid-column:span 2}
+  .identity-card .field.id-tc,.identity-card .field.id-birth,.identity-card .field.id-class{grid-column:span 3}
+  .identity-card .field.id-name,.identity-card .field.id-teacher,.identity-card .field.id-group,.identity-card .field.id-year,.identity-card .field.id-date{grid-column:span 4}
+}
+@media(max-width:760px){
+  .identity-card .grid{grid-template-columns:1fr}
+  .identity-card .field.id-sequence,.identity-card .field.id-school-no,.identity-card .field.id-tc,.identity-card .field.id-birth,.identity-card .field.id-year,.identity-card .field.id-group,.identity-card .field.id-class,.identity-card .field.id-name,.identity-card .field.id-teacher,.identity-card .field.id-gender,.identity-card .field.id-date{grid-column:1}
+}

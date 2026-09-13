@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BEP Yerel Uygulaması</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="workflow.css">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="fix.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="forms.css">
+  <link rel="stylesheet" href="v6.css">
+  <link rel="stylesheet" href="v7.css">
+  <link rel="stylesheet" href="v8.css">
+  <link rel="stylesheet" href="v9.css">
+  <link rel="stylesheet" href="v10.css">
+  <link rel="stylesheet" href="v11.css">
+  <link rel="stylesheet" href="v12.css">
+  <link rel="stylesheet" href="v15.css">
+  <link rel="stylesheet" href="v16.css">
+  <link rel="stylesheet" href="v17.css">
+  <link rel="stylesheet" href="v18.css">
+  <link rel="stylesheet" href="v19.css">
+  <link rel="stylesheet" href="v20.css">
+  <link rel="stylesheet" href="v21.css">
+  <link rel="stylesheet" href="v23.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <button class="brand brand-button" id="homeBrand" title="Ana sayfaya dön"><span class="brand-mark">BEP</span><span><strong>BEP Dosyası</strong><small>Ana sayfa</small></span></button>
+    <nav id="nav"></nav>
+    <div class="save-state"><span id="saveDot"></span><span id="saveText">Yerel kayıt hazır</span></div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <div><p class="eyebrow">2025–2026</p><h1 id="pageTitle">Veri Girişi</h1></div>
+      <div class="actions">
+        <button id="newBtn" class="ghost">Yeni kayıt</button>
+        <button id="exportBtn" class="ghost">JSON yedekle</button>
+        <label class="button ghost">JSON geri yükle<input id="importInput" type="file" accept="application/json" hidden></label>
+        <button id="printBtn" class="primary" hidden>PDF / Yazdır</button>
+      </div>
+    </header>
+    <section id="app" aria-live="polite"></section>
+  </main>
+  <div id="toast" role="status"></div>
+  <script src="xlsx.full.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

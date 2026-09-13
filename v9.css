@@ -1,0 +1,2 @@
+.student-import{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;padding:4px}.student-import>div{display:grid;gap:6px}.student-import strong{font-size:15px}.student-import span{color:var(--muted);font-size:12px;line-height:1.45}.student-import .button{flex:0 0 auto;background:var(--green);border-color:var(--green);color:#fff;min-width:170px;text-align:center}.import-card .card-body{padding:16px 20px}
+@media(max-width:720px){.student-import{align-items:stretch;flex-direction:column}.student-import .button{width:100%}}

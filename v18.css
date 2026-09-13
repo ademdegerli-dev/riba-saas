@@ -1,0 +1,38 @@
+/* v18: grid görünürlük ve geniş veri girişi düzeltmeleri */
+.card-body>.grid>.full,.class-bulk,.class-sheet,.dynamic-row,.service-entry,.dynamic-decision,.performance-add{grid-column:1/-1;width:100%;min-width:0}
+
+.class-bulk{grid-template-columns:minmax(320px,1.25fr) minmax(220px,.75fr) minmax(220px,.75fr) auto;padding:18px 20px;gap:14px;background:#dfeee9;border:2px solid #93b9ac}
+.class-bulk strong{display:block;font-size:15px;color:#174f44}
+.class-bulk small{display:block;font-size:12px;line-height:1.45;color:#435e56}
+.class-bulk select{min-height:44px}
+
+.dynamic-row>.grid{grid-template-columns:repeat(12,minmax(0,1fr));width:100%}
+.dynamic-row .field.half{grid-column:span 6;min-width:0}
+.dynamic-row input,.dynamic-row textarea{min-height:48px}
+.dynamic-row textarea{min-height:96px}
+.performance-add{padding:0 0 4px}
+.performance-add button{min-width:280px;background:#edf5f2;border-color:#8cb4a7;color:#174f44}
+
+.service-entry>.grid{grid-template-columns:repeat(12,minmax(0,1fr));width:100%}
+.service-entry .service-course{grid-column:span 4}
+.service-entry .service-types{grid-column:span 4}
+.service-entry .service-short{grid-column:span 2}
+.service-entry .service-responsible{grid-column:span 2}
+.service-entry input,.service-entry select{min-height:46px}
+.service-entry select[multiple]{min-height:142px}
+.dynamic-decision textarea{min-height:120px;width:100%}
+
+.identity-card .field.id-sequence{grid-column:span 2}
+.identity-card .field.id-school-no{grid-column:span 2}
+.identity-card .field.id-tc{grid-column:span 3}
+.identity-card .field.id-birth{grid-column:span 2}
+.identity-card .field.id-year{grid-column:span 3}
+.identity-card .field.id-group{grid-column:span 4}
+.identity-card .field.id-class{grid-column:span 2}
+.identity-card .field.id-name{grid-column:span 3}
+.identity-card .field.id-teacher{grid-column:span 3}
+.identity-card .field.id-gender{grid-column:span 2}
+.identity-card .field.id-date{grid-column:span 3}
+
+@media(max-width:1180px){.class-bulk{grid-template-columns:1fr 1fr}.class-bulk>div{grid-column:1/-1}.identity-card .field.id-sequence,.identity-card .field.id-school-no,.identity-card .field.id-birth,.identity-card .field.id-class,.identity-card .field.id-gender{grid-column:span 3}.identity-card .field.id-tc,.identity-card .field.id-year,.identity-card .field.id-name,.identity-card .field.id-teacher,.identity-card .field.id-date{grid-column:span 6}.identity-card .field.id-group{grid-column:span 6}}
+@media(max-width:760px){.class-bulk{grid-template-columns:1fr}.dynamic-row .field.half,.service-entry .service-course,.service-entry .service-types,.service-entry .service-short,.service-entry .service-responsible,.identity-card .field.id-sequence,.identity-card .field.id-school-no,.identity-card .field.id-tc,.identity-card .field.id-birth,.identity-card .field.id-year,.identity-card .field.id-group,.identity-card .field.id-class,.identity-card .field.id-name,.identity-card .field.id-teacher,.identity-card .field.id-gender,.identity-card .field.id-date{grid-column:1/-1}.performance-add button{width:100%;min-width:0}}
