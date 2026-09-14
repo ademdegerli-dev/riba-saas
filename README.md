@@ -1,5 +1,49 @@
 # BEP Yerel Web Uygulaması
 
+## Sürüm 36
+
+- Anne ve baba çalışma seçeneği “İşte Çalışıyor” olarak değiştirildi.
+- Yönetici tarafından düzenlenen öğretmen ve sınıf/branş yetki ekranı eklendi.
+- Öğretmen giriş bağlantısı, otomatik öğretmen şifresi ve paylaşılabilir giriş mesajı eklendi.
+- Öğretmen görünümü kendi öğrencileriyle ve izin verilen sayfalarla sınırlandı; alan bazlı salt okunur/düzenlenebilir kontroller uygulandı.
+- BEP Planı performans seçimi yalnızca “Performans Yeterli (+)” ve “Geliştirilmeli (-)” seçeneklerinden oluşur.
+- Manuel amaç girişinden beceri alanı kaldırıldı.
+- Okul öncesi, ilkokul ve zihinsel/otizm özel eğitim sınıfları için amaç kapsamı ayrıştırıldı.
+- BEP Birimi açıklamaları güncellendi.
+
+## Sürüm 35
+
+- Karşılaştırma arşivindeki her yükleme açılarak öğrenci bazındaki değişiklikler görülebilir.
+- e-Okul verisindeki engel türleri yalnızca Okul Bilgileri seçenekleriyle ayrı ayrı eşleştirilir; tanınmayan türler eklenmez ve uyarı olarak gösterilir.
+- Eğitsel Performans ve BEP Planında birden fazla beceri alanı, uzun dönemli amaç ve kısa dönemli amaç seçilebilir.
+- Seçim satırları sıklaştırıldı, koyulaştırıldı ve seçilen satırlar belirginleştirildi.
+- Çıktı seçimlerinde numaralar kaldırıldı ve Kapak ilk sıraya alındı.
+
+## Sürüm 34
+
+- Eğitsel Performansta bir ders için birden fazla beceri alanı seçilebilir.
+- Her beceri alanında uzun dönemli amaç, ardından kısa dönemli amaç seçimi açılır.
+- İşaretlemeli seçenekler tam genişlikte yatay satırlar olarak gösterilir; kısa dönemli amaçların her biri ayrı satırdadır.
+- Önceki 395 amaç kaydı uygulamayla birlikte gelen kalıcı başlangıç havuzuna eklendi.
+- BEP Planında performansta kullanılan veya havuzdaki diğer beceri alanları seçilebilir.
+- “Destek Eğitim Listesi” adı “Özel Eğitim Listesi” olarak değiştirildi.
+- RAM sınıf kademesi uyarılı öğrencilerin istatistikleri diğer öğrencilerden ayrıldı.
+
+## Sürüm 33
+
+- BEP Planı, Beceri Alanı → giriş türü → Uzun Dönemli Amaç → bir veya birden fazla Kısa Dönemli Amaç sırasıyla ilerler.
+- Eğitsel Performans ekranında havuzdaki amaçlardan öğrencinin yapabildikleri seçilir ve `%10`–`%100` düzeyi kaydedilir.
+- Ortak amaç havuzu `0000`, kullanıcıya özel amaç havuzu `1111` şifresiyle yüklenir.
+- Altı zorunlu başlığı içeren boş Excel amaç şablonu uygulamadan indirilebilir.
+
+## Sürüm 32
+
+- Okul Bilgileri sayfasından Excel (`.xlsx`, `.xls`) veya metin (`.txt`) biçiminde BEP amaç havuzu yüklenebilir.
+- Çok sayfalı Excel dosyalarında içe aktarılacak sayfalar kullanıcı tarafından seçilir.
+- Beklenen sütunlar: Sınıf / Yaş Grubu, Ders / Alan, Beceri Alanı, Uzun Dönemli Amaç, Kısa Dönemli Amaç ve Basamak.
+- Eğitsel Performans öğrencinin yapabildiklerini kaydeder; BEP Planı ise yüklenen havuzdan kazandırılacak beceri ve amaçları öncelikli olarak seçtirir. Alanlar elle de düzenlenebilir.
+- Toplantı Kararları ekranındaki süre alanı “Destek eğitim süresi” olarak gösterilir; resmi çıktıda “Haftalık Süre” başlığı korunur.
+
 ## v26 yenilikleri
 
 - Bireysel izleme çizelgesindeki aylık değerlendirme başlıkları Excel'deki “Metni Yukarı Döndür” görünümüne dönüştürüldü.

@@ -1,0 +1,6 @@
+.student-access-bar{display:grid;grid-template-columns:minmax(260px,1fr) minmax(220px,.8fr) minmax(320px,1.25fr);gap:12px;align-items:end;margin:0 0 14px;padding:16px 18px;border:2px solid #2a7766;border-radius:14px;background:#e9f6f1;box-shadow:0 5px 16px rgba(31,92,78,.1)}
+.student-access-bar>div{display:flex;flex-direction:column;gap:4px}.student-access-bar>div strong{font-size:17px}.student-access-bar>div span{font-size:12px;color:#41655d}.student-access-bar input,.student-access-bar select{min-height:44px;background:#fff;border:1px solid #8fbcb1;border-radius:9px;padding:9px 11px;font-weight:700}.teacher-view-control{background:#edf4ff!important;border-color:#7199c7!important}.teacher-goal-upload{border:2px solid #d6a62b}.teacher-goal-upload .goal-upload{background:#fff8d7}.teacher-goal-upload [data-goal-upload]{font-weight:800}
+.teacher-session .student-db-table [data-open],.teacher-session .support-table [data-open]{font-weight:800;background:#1f755f;color:#fff;border-color:#1f755f}
+.teacher-session .message-grid [data-copy-target]{font-weight:800;background:#1f755f;color:#fff;border-color:#1f755f}
+.teacher-session .import-card,.teacher-session .day-add,.teacher-session .agenda-day-planner{display:none!important}
+@media(max-width:1050px){.student-access-bar{grid-template-columns:1fr 1fr}.student-access-bar>div{grid-column:1/-1}}

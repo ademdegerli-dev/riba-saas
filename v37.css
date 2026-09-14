@@ -1,0 +1,9 @@
+.nav-btn.teacher-editable{font-weight:900;letter-spacing:.01em}
+.teacher-can-edit{background:#fff4bd!important;border-color:#d6a62b!important}
+.teacher-can-edit input:not([type=checkbox]):not([type=radio]),.teacher-can-edit select,.teacher-can-edit textarea{background:#fff9da!important;border-color:#d6a62b!important}
+.teacher-locked{background:#ffe1e1!important;border-color:#d75d5d!important;cursor:not-allowed}
+.teacher-locked input,.teacher-locked select,.teacher-locked textarea{background:#fff0f0!important;border-color:#d75d5d!important;color:#7b2222!important;opacity:1}
+.teacher-selected-diagnosis{background:#ffcaca!important;border:2px solid #a91f2c!important;color:#76121c!important;font-weight:900!important;box-shadow:0 0 0 2px rgba(169,31,44,.12)}
+.top-wizard{margin:0 0 16px;border-top:0;border-bottom:1px solid var(--line,#d6dfdc);padding-top:0;padding-bottom:14px}
+.bep-preparation-card{margin-top:18px}.bep-preparation-card .table-wrap{max-height:430px;overflow:auto}.bep-summary{display:flex;gap:8px;flex-wrap:wrap}.bep-summary b{padding:7px 11px;border-radius:999px;background:#eef4f2}.bep-state{display:inline-block;padding:5px 9px;border-radius:999px;font-weight:800}.bep-state.ready{background:#d9f3e4;color:#17653c}.bep-state.missing{background:#ffe2df;color:#9d2922}
+@media (max-width:900px){.bep-preparation-card table{min-width:720px}}

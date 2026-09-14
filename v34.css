@@ -1,0 +1,11 @@
+/* Geniş seçenek satırları: işaret kutusu küçük, metin bilgisayar ekranında tam genişlikte. */
+.wide-choice-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:8px 12px;width:100%;padding:14px;border:1px solid #bdd3ce;border-radius:12px;background:#fbfdfd}
+.wide-choice-list>label{display:flex;align-items:flex-start;gap:10px;min-width:0;width:100%;padding:11px 13px;border:1px solid #d7e5e2;border-radius:8px;background:#fff;line-height:1.35}
+.wide-choice-list input,.achievement-row input{width:16px!important;height:16px!important;min-width:16px!important;flex:0 0 16px;margin:2px 0 0}
+.wide-choice-list span,.achievement-row span{display:block;min-width:0;white-space:normal;overflow-wrap:anywhere;color:#183f38}
+.performance-bank{width:100%;min-width:0}.skill-goal-section{width:100%;min-width:0;margin-top:14px}.skill-goal-section>h4{padding:13px 16px;margin:0;background:#dfeeea;border-radius:10px 10px 0 0;font-size:1rem}
+.long-list{grid-template-columns:1fr;border-radius:0;background:#f7fbfa}.short-list{display:grid;width:100%;border:1px solid #bfd4cf;border-top:0;border-radius:0 0 10px 10px;overflow:hidden}.short-list>strong{padding:12px 14px;background:#edf5f3}
+.achievement-row{display:grid!important;grid-template-columns:minmax(0,1fr) 112px!important;width:100%;min-height:48px;padding:10px 14px!important;gap:14px;border-top:1px solid #dde9e6}.achievement-row label{display:flex;width:100%;min-width:0;gap:10px;align-items:flex-start}.achievement-row select{width:112px;min-width:112px;height:38px}
+.performance-guided .grid{grid-template-columns:minmax(0,1fr);width:100%}.dynamic-row.performance-guided{width:100%;max-width:none;overflow:visible}
+@media(min-width:1200px){.wide-choice-list{grid-template-columns:repeat(2,minmax(0,1fr))}.long-list{grid-template-columns:1fr}}
+@media(max-width:700px){.wide-choice-list{grid-template-columns:1fr}.achievement-row{grid-template-columns:1fr!important}.achievement-row select{margin-left:26px}}
