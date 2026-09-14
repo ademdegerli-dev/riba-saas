@@ -1,6 +1,6 @@
 {
   "name": "bep-yerel-uygulamasi",
-  "version": "30.0.0",
+  "version": "31.0.0",
   "description": "Bireyselleştirilmiş Eğitim Programı yönetimi ve PDF çıktıları",
   "main": "main.js",
   "author": "Adem DEĞERLİ <ademdegerli@gmail.com>",

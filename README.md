@@ -21,6 +21,8 @@ Sol menüdeki BEP iş akışı sayfalarının tamamı doğrudan bağlantıdır. 
 
 Öğrenci Veritabanı sayfasındaki **E-Okul’dan öğrenci yükle** bölümü, E-Okuldan alınan listeyi doğrudan okur. Bölümde “E-Okuldan indirilen özel eğitim gereksinimli öğrenci listesini Excel verisi olarak buraya yükleyiniz.” açıklaması gösterilir. Okul No, sınıf/şube, ad-soyad, cinsiyet, engel durumu ve önerilen hizmet bilgileri aktarılır. Aynı okul numarasına ait tekrar satırlar tek öğrenciye dönüştürülür ve bütün engel durumları birleştirilir. Okul bilgilerinde bulunmayan sınıflar otomatik oluşturulur. Sadeleştirilmiş öğrenci listesine ihtiyaç yoktur.
 
+Normal sınıf adları aktarım sırasında kısa biçime dönüştürülür: `1. Sınıf / A Şubesi` değeri `1-A`, `2. Sınıf / B Şubesi` değeri `2-B` olur. Adında Zihinsel, Otizm veya Otistik bulunan özel eğitim sınıflarının özgün sınıf adı korunur.
+
 ## Toplantı katılımı ve imzalar
 
 Aile bilgileri bölümünde anne, baba ve varsa vasi için 1., 2. ve 3. toplantıya katılım işaretlenebilir. İşaretlenen kişiler yakınlıkları ve adlarıyla BEP geliştirme birimi üyeleri sayfasına aktarılır. PDF sayfa 2 ve 3'te dört kişilik, sayfa 4'te beş kişilik imza bölümü bulunur; kayıtlı yönetici, öğretmen, rehber öğretmen ve veli adları otomatik kullanılır.
