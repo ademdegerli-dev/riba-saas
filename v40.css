@@ -1,0 +1,3 @@
+.teacher-hero-actions{display:flex;gap:8px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.teacher-inline-add{width:100%;min-height:48px;border:2px dashed #4d8d7b;background:#eef8f4;color:#185a49;font-size:15px;font-weight:850}.teacher-inline-add:hover{background:#dff2e9}.plan-course-paper .signature-block{gap:3mm}.plan-course-paper .signature-person{font-size:8.5px}.plan-course-paper .signature-person strong{font-size:8.5px}
+@media(max-width:900px){.teacher-hero-actions{justify-content:flex-start}.teacher-hero-actions>*{width:100%;text-align:center}}
+@media print{.plan-course-paper .signature-block{grid-template-columns:repeat(5,minmax(0,1fr));gap:2.5mm}.plan-course-paper .signature-person{min-height:21mm}}

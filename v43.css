@@ -1,0 +1,9 @@
+.goal-added-courses{margin-top:10px;padding:13px 15px;border:1px solid #b9d4cf;border-radius:10px;background:#f3faf8}.goal-added-courses h3{margin:0 0 7px;color:#174f49}.goal-added-courses p{margin:0;line-height:1.65}
+.class-sheet-head{grid-template-columns:minmax(130px,220px) 1fr auto!important}.class-sheet-head button{justify-self:end;padding:7px 12px}
+.selected-pool-goal{display:flex;align-items:flex-start;gap:10px;padding:13px 15px;border:2px solid #367f75;border-radius:10px;background:#e3f4ef;color:#123f39}.selected-pool-goal strong{flex:0 0 auto;padding:4px 8px;border-radius:999px;background:#145c53;color:#fff}.selected-pool-goal span{font-weight:900;font-size:15px;line-height:1.5}
+.selected-goal-card>summary>span{font-weight:900;color:#164f75}.selected-goal-card[open]>summary{background:#dceff5}
+.teacher-excel-table{min-width:1320px}.teacher-excel-table th:nth-child(2){width:270px}.teacher-excel-table th:nth-child(3){width:540px}.teacher-excel-table [data-teacher-branch]{margin-top:4px}.teacher-excel-table .class-cell summary{white-space:normal;line-height:1.35}.compact-class-picker{grid-template-columns:repeat(6,minmax(72px,1fr))}
+.ram-home-stat,.stats-summary button.warning{background:#b41822!important;color:#fff!important;border-color:#870f17!important}.ram-home-stat strong,.stats-summary button.warning strong{color:#fff!important;font-weight:950!important}.ram-home-stat span,.stats-summary button.warning span{color:#fff!important;font-weight:800}
+.agenda-print-list tbody tr,.agenda-print-list tbody td{background:#fff!important;color:#000!important;font-weight:800!important}
+@media(max-width:1150px){.compact-class-picker{grid-template-columns:repeat(4,minmax(72px,1fr))}}
+@media print{.agenda-print-list tbody tr,.agenda-print-list tbody td{background:#fff!important;color:#000!important;font-weight:800!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}

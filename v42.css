@@ -1,0 +1,6 @@
+.course-name-chip{display:inline-block;padding:3px 9px;border-radius:999px;background:#155f82;color:#fff;font-weight:900;letter-spacing:.01em;box-shadow:0 2px 6px #123b4f25}
+.performance-instruction{padding:12px 14px!important;border-left:5px solid #155f82!important;background:#e8f5fb!important;color:#173844!important;font-size:15px}
+.wide-choice-list legend,.short-list>strong,.short-goal-bank legend{line-height:1.8;color:#153e3a}
+.active-course-context{margin:0 0 12px;padding:12px 14px;border:2px solid #4d9baa;border-radius:10px;background:#eaf7fa;font-size:16px;font-weight:800}
+.no-course-goals{font-size:15px;line-height:1.5}
+#clearAgendaAppointments:not(:disabled){box-shadow:0 2px 8px #8d1c1c35;font-weight:800}
